@@ -1,7 +1,7 @@
 {
     "name": "Forward message remove bot",
     "description": "A Telegram botwritten in python using pyrogram",
-    "repository": "https://github.com/saminsumesh/Auto-Forward-Remove-Bot",
+    "repository": "https://github.com/Kenzhu02/NoForward",
     "keywords": ["telegram", "service", "forwarded","message", "cleaner"],
     "env": {
         "BOT_TOKEN": {
