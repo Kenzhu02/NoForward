@@ -11,16 +11,16 @@ Bot = Client(
 )
 
 START_TXT = """Hello {},
-__Iam a simple Auto Forward Tag message remover bot__
-➣ Just add me to your groups and make me as admin.
-➣ I will only remove message with forward tag!
+Saya adalah bot penghapus pesan Terusan Otomatis sederhana
+➣ Tambahkan saya ke grup Anda dan jadikan saya sebagai admin.
+➣ Saya hanya akan menghapus pesan dengan terusan.
 
-**Made by @XD_Botz**
+**Dibuat Oleh @TripleNineee**
 """
 
 START_BUTTONS = InlineKeyboardMarkup(
     [[
-        InlineKeyboardButton("Add me to your group", url="https://t.me/forwardremoveXDbot?startgroup=true")
+        InlineKeyboardButton("Tambahkan saya kegroup", url="https://t.me/ZhuXAntichannelBot?startgroup=true")
     ]]
 )
 
@@ -36,7 +36,7 @@ async def start(bot, message):
 
 @Bot.on_message(filters.forwarded)
 async def forward(bot, message):
-    await message.delete("This group doesn't allow forward messages")
+    await message.delete("⛔ Pesan terusan telah dihapus")
     await message.delete()
 
 Bot.run()
